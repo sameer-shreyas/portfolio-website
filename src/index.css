@@ -1,0 +1,20 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities {
+  .bg-pattern {
+    background-image: url('https://www.transparenttextures.com/patterns/white-carbon.png');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+}
