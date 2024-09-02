@@ -54,14 +54,35 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } w-full md:flex md:items-center md:w-auto md:space-x-4 bg-gray-800 md:bg-transparent md:mt-0 mt-4`}
+          } absolute top-0 left-0 w-full h-screen bg-gray-800 md:bg-transparent md:h-auto md:relative md:flex md:items-center md:w-auto md:space-x-4 mt-16 md:mt-0 p-6 md:p-0`}
         >
+          {/* Close Icon for Mobile */}
+          <button 
+            onClick={toggleMenu} 
+            className="absolute top-4 right-4 text-white md:hidden"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
@@ -71,8 +92,8 @@ const Navbar = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
@@ -82,8 +103,8 @@ const Navbar = () => {
             to="/skills"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
@@ -93,8 +114,8 @@ const Navbar = () => {
             to="/projects"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
@@ -104,8 +125,8 @@ const Navbar = () => {
             to="/experience"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
@@ -115,8 +136,8 @@ const Navbar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-400 underline block py-2 md:inline-block'
-                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+                ? 'text-blue-400 underline block py-2 text-center'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 text-center'
             }
             onClick={toggleMenu}
           >
