@@ -21,7 +21,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-gray-100 text-gray-800 py-20">
+    <section className="bg-gray-100 text-gray-800 py-20 fade-in">
       <div className="container mx-auto px-4 lg:px-32">
         <h3 className="text-5xl font-extrabold mb-10 text-center">Skills</h3>
         <p className="text-xl text-gray-600 mb-12 text-center">

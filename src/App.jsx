@@ -7,6 +7,7 @@ import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import './index.css';
+import WorkExperience from './components/pages/Work';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/experience" element={<WorkExperience />} />
         </Routes>
       </div>
     </Router>

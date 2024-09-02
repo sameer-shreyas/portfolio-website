@@ -11,18 +11,19 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
+        {/* Logo and Title */}
         <div className="flex items-center">
           <h1 className="text-2xl font-bold">Sameer Shreyas</h1>
-          
+
           {/* LeetCode Logo */}
           <a
-            href="https://leetcode.com/u/sameershreyas13/" // replace with your LeetCode profile link
+            href="https://leetcode.com/u/sameershreyas13/"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" // replace with the correct URL if necessary
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
               alt="LeetCode"
               className="w-8 h-8 hover:opacity-80 transition-opacity duration-300"
             />
@@ -53,7 +54,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } md:flex md:space-x-4 mt-4 md:mt-0 bg-gray-800 md:bg-transparent w-full md:w-auto text-center md:text-left`}
+          } w-full md:flex md:items-center md:w-auto md:space-x-4 bg-gray-800 md:bg-transparent md:mt-0 mt-4`}
         >
           <NavLink
             to="/"
@@ -98,6 +99,17 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             Projects
+          </NavLink>
+          <NavLink
+            to="/experience"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-blue-400 underline block py-2 md:inline-block'
+                : 'text-white hover:text-blue-400 transition-colors duration-300 block py-2 md:inline-block'
+            }
+            onClick={toggleMenu}
+          >
+            Work Experience
           </NavLink>
           <NavLink
             to="/contact"

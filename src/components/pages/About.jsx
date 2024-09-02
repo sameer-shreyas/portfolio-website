@@ -3,7 +3,7 @@ import aboutImage from '../../assets/MyImage.jpg'; // Adjust path as needed
 
 const About = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-gray-300 text-gray-800 py-20">
+    <section className="bg-gradient-to-b from-gray-100 to-gray-300 text-gray-800 py-20 fade-in">
       <div className="container mx-auto px-4 lg:px-32 flex flex-col lg:flex-row items-center">
         {/* Image Section */}
         <div className="lg:w-1/2 mb-10 lg:mb-0">
