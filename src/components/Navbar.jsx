@@ -11,7 +11,23 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Sameer Shreyas</h1>
+        <div className="flex items-center">
+          <h1 className="text-2xl font-bold">Sameer Shreyas</h1>
+          
+          {/* LeetCode Logo */}
+          <a
+            href="https://leetcode.com/u/sameershreyas13/" // replace with your LeetCode profile link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" // replace with the correct URL if necessary
+              alt="LeetCode"
+              className="w-8 h-8 hover:opacity-80 transition-opacity duration-300"
+            />
+          </a>
+        </div>
 
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden">
