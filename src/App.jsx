@@ -8,6 +8,7 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import './index.css';
 import WorkExperience from './components/pages/Work';
+import Footer from './components/pages/Footer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/experience" element={<WorkExperience />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
